@@ -11,7 +11,7 @@ public class Exercise04 {
         System.out.println("Ejemplos de cálculos CON estructuras de control:");
 
         System.out.println("Suma de los primeros 5 números: " + sumNum(5));
-        System.out.println("Suma de los primeros 20 números pares: " + sumEvenNum(40));
+        System.out.println("Suma de los primeros 20 números pares: " + sumEvenNum(20));
         System.out.println("Obtén el factorial del número 7 → (7!): " + factorial(7));
         System.out.println(recursiveFactorial(7));
     }
@@ -26,7 +26,7 @@ public class Exercise04 {
 
     public static int sumEvenNum(int num) {
         int sum = 0;
-        for (int i = 0; i <= num; i += 2) {
+        for (int i = 0; i < ++num; i += 2) {
             sum = sum + i;
         }
         return sum;
